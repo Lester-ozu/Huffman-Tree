@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="407.0" prefWidth="334.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="SubmitSceneController">
+   <children>
+      <Button fx:id="viewBTButton" layoutX="95.0" layoutY="200.0" mnemonicParsing="false" onAction="#viewBinaryTree" prefHeight="42.0" prefWidth="144.0" style="-fx-background-radius: 20;" text="View Binary Tree" />
+      <Button fx:id="viewEMButton" layoutX="95.0" layoutY="259.0" mnemonicParsing="false" onAction="#viewEncodedMessage" prefHeight="42.0" prefWidth="144.0" style="-fx-background-radius: 20;" text="View Encoded Message" />
+      <Button fx:id="compareOAEButton" layoutX="68.0" layoutY="318.0" mnemonicParsing="false" onAction="#compareOrigAEnc" prefHeight="42.0" prefWidth="198.0" style="-fx-background-radius: 20;" text="Compare Original and Encoded" />
+      <Label alignment="CENTER_RIGHT" layoutX="95.0" layoutY="63.0" prefHeight="27.0" prefWidth="117.0" text="Number of Words:">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER_RIGHT" layoutX="69.0" layoutY="90.0" prefHeight="27.0" prefWidth="144.0" text="Number of Characters:">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER_RIGHT" layoutX="54.0" layoutY="117.0" prefHeight="27.0" prefWidth="159.0" text="Number of Encoded Bits:">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="wordsNumLabel" layoutX="224.0" layoutY="64.0" prefHeight="27.0" prefWidth="50.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="charNumLabel" layoutX="222.0" layoutY="90.0" prefHeight="27.0" prefWidth="50.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="bitsNumLabel" layoutX="221.0" layoutY="117.0" prefHeight="27.0" prefWidth="50.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Button fx:id="backButton" layoutX="25.0" layoutY="24.0" mnemonicParsing="false" onAction="#backToMainScene" prefHeight="27.0" prefWidth="42.0" text="&lt;" />
+   </children>
+</AnchorPane>

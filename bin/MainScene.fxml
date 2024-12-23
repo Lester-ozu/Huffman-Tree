@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="434.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="MainSceneController">
+   <children>
+      <Label alignment="CENTER" layoutX="116.0" layoutY="25.0" prefHeight="23.0" prefWidth="367.0" text="Please put the text to encode...">
+         <font>
+            <Font name="Montserrat Medium" size="18.0" />
+         </font>
+      </Label>
+      <TextArea fx:id="myTextArea" layoutX="27.0" layoutY="61.0" prefHeight="248.0" prefWidth="547.0" promptText="is empty..................." style="-fx-background-radius: 20;" />
+      <Button fx:id="exitButton" layoutX="205.0" layoutY="394.0" mnemonicParsing="false" onAction="#exitFunc" prefHeight="26.0" prefWidth="54.0" style="-fx-background-radius: 20;" text="Exit">
+         <font>
+            <Font name="Montserrat Medium" size="12.0" />
+         </font>
+      </Button>
+      <Button fx:id="submitButton" layoutX="274.0" layoutY="394.0" mnemonicParsing="false" onAction="#submitFunc" style="-fx-background-radius: 20;" text="Submit" />
+      <Button fx:id="clearButton" layoutX="339.0" layoutY="394.0" mnemonicParsing="false" onAction="#clearFunc" prefHeight="26.0" prefWidth="54.0" style="-fx-background-radius: 20;" text="Clear" />
+      <Label layoutX="291.0" layoutY="319.0" style="-fx-font-weight: bold;" text="OR">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="attachLabel" alignment="CENTER" layoutX="170.0" layoutY="350.0" onMouseClicked="#attachTxtFile" prefHeight="20.0" prefWidth="263.0" text="--Attach a Txt File--">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
